@@ -1,0 +1,103 @@
+:root {
+    --vino: #7E1F3D; 
+    --vino-claro: #A14B6E; 
+    --gris: #2a2a2a; 
+    --blanco: #ffffff; 
+    --negro: #000000e5; 
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    color: var(--blanco);
+    background-color: var(--negro); 
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center; 
+    color: var(--vino); 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 1rem; 
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--vino); 
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+p {
+    font-size: 1em;
+}
+
+main {
+    margin: 3rem 7rem 6rem 7rem;
+}
+
+#titulo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+#panelOperacion {
+    text-align: center;
+    padding: 3em;
+    height: 15rem;
+    background-color: var(--gris); 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+}
+
+#botonesOperaciones {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: 2rem 0; 
+}
+
+.opcionOperacion {
+    background-color: var(--vino-claro); 
+    color: black;
+    font-weight: 600;
+    padding: 0.75em 1.5em; 
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; 
+    margin: 0.5rem; 
+}
+
+.opcionOperacion:hover {
+    background-color: var(--vino); 
+    transform: scale(1.05); 
+}
+
+.opcionRegistroCompra {
+    background-color: rgb(0, 155, 13);
+    color: rgb(231, 231, 231);
+    font-weight: 600;
+    padding: 0.75em 1.5em; 
+    margin: 0.5em;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s; 
+}
+
+.opcionRegistroCompra:hover {
+    background-color: rgb(0, 99, 0);
+    transform: scale(1.05); 
+}
+
+footer {
+    background-color: var(--gris);
+    padding: 2em;
+    text-align: center; 
+}
