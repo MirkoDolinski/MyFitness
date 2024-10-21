@@ -1,0 +1,174 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1C1C1C; /* Fondo oscuro */
+    color: #F4F4F9; /* Color claro para texto */
+    line-height: 1.6;
+}
+
+header {
+    background-color: #8B0000; /* Color vino profundo */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 26px;
+    font-weight: 700;
+    color: #F4F4F9;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #F4F4F9;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #B22222; /* Hover color más claro del vino */
+    border-radius: 5px;
+}
+
+.hero {
+    padding: 50px 0;
+    background-color: #282828; /* Fondo gris oscuro para el hero */
+    color: #F4F4F9;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #DCDCDC; /* Color suave */
+}
+
+/* Secciones */
+section {
+    background-color: #2B2B2B; /* Fondo más claro que el principal */
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #F4F4F9;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 16px;
+    color: #DCDCDC;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #3B3B3B; /* Fondo para inputs */
+    color: #F4F4F9;
+}
+
+button {
+    background-color: #8B0000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #B22222; /* Color más claro para hover */
+}
+
+#result, #kit-output {
+    margin-top: 20px;
+}
+
+/* Pie de página */
+footer {
+    background-color: #1A1A1A; /* Fondo oscuro del footer */
+    color: #F4F4F9;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #DCDCDC;
+}
+
+.footer-section p {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #B0B0B0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
